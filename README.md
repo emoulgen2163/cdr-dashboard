@@ -1,16 +1,53 @@
-# React + Vite
+# CDR Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A Call Data Records (CDR) analytics dashboard built for the London Success Academy Software Development Internship.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This dashboard consumes a live CDR API and visualizes call data in a professional SaaS-style interface. It allows telecom teams to monitor call activity, analyze costs, and track performance metrics in real time.
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- KPI summary cards (total calls, cost, duration, success/failure rates)
+- Top 10 callers by call duration (bar chart)
+- Total cost by city (bar chart)
+- Calls by city (pie chart)
+- Call activity timeline by hour (line chart)
+- Recent call logs table with pagination
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React + Vite
+- Tailwind CSS
+- shadcn/ui
+- Recharts
+
+## Getting Started
+
+### Prerequisites
+- Node.js v20 or higher
+
+### Installation
+
+```bash
+git clone https://github.com/emoulgen2163/cdr-dashboard.git
+cd cdr-dashboard
+npm install
+npm run dev
+```
+
+Open http://localhost:5173 in your browser.
+
+## API
+
+Data is fetched from: https://69b30b45e224ec066bdb55a0.mockapi.io/api/v1/cdr
+
+## Deployment
+
+Live dashboard: https://cdr-dashboard-lake.vercel.app/
+
+## Screenshots
+
+![Dashboard Overview](screenshots/screenshot1.png)
+![Call Charts](screenshots/screenshot2.png)
+![Call Logs Table](screenshots/screenshot3.png)
