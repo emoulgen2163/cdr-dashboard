@@ -61,7 +61,7 @@ function UserList(){
                     <span className="font-semibold text-lg">Welcome {fullName}</span>
                     <span className="text-gray-400 text-sm">Call Analytics</span>
                 </div>
-                <span onClick={() => navigate("/")} className="text-gray-400 text-sm cursor-pointer hover:text-white">
+                <span onClick={() => navigate("/dashboard")} className="text-gray-400 text-sm cursor-pointer hover:text-white">
                         Back
                 </span>
                 <button 
