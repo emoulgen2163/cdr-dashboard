@@ -148,7 +148,7 @@ function Dashboard() {
                 <button
                     onClick={() => {
                         localStorage.removeItem("token")
-                        navigate("/login")
+                        navigate("/")
                     }}
                     className="bg-red-500 text-white px-4 py-2 rounded-lg text-sm"
                 >
