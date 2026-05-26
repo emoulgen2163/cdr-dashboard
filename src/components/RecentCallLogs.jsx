@@ -7,7 +7,7 @@ import { useState } from "react"
 function RecentCallLogs({calls}) {
     
     const [currentPage, setCurrentPage] = useState(0)
-    const rowsPerPage = 10
+    const rowsPerPage = 100
     const startIndex = currentPage * rowsPerPage
     const visibleCalls = calls.slice(startIndex, startIndex + rowsPerPage)
     const totalPages = Math.ceil(calls.length / rowsPerPage)
