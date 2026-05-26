@@ -84,7 +84,7 @@ function Register() {
 
             <p className="text-gray-400 text-sm text-center">
             Already have an account? 
-            <span onClick={() => navigate("/login")} className="text-indigo-400 cursor-pointer"> Login </span>
+            <span onClick={() => navigate("/")} className="text-indigo-400 cursor-pointer"> Login </span>
             </p>
 
             {error && <p className="text-red-400 text-sm">{error}</p>}
